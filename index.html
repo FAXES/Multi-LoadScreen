@@ -1,0 +1,37 @@
+<!-- Script Made by FAXES -->
+<html>
+    <head>
+        <link href="keks.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="style.css">	
+
+<script type="text/javascript">
+  var imageURLs = [
+       "http://mydomain.com/picture1.jpg"
+     , "http://mydomain.com/picture2.jpg"
+     , "http://mydomain.com/picture3.jpg"
+	 , "http://mydomain.com/picture4.jpg"
+     , "http://mydomain.com/picture5.jpg"
+  ];
+  function getImageTag() {
+    var img = '<img src=\"';
+    var randomIndex = Math.floor(Math.random() * imageURLs.length);
+    img += imageURLs[randomIndex];
+    img += '\" class=\"backdrop\"/>';
+    return img;
+  }
+</script>
+</head>
+ <body onload="play()">
+	<div id="soundtrack">
+
+	</div>
+        <div class="backdrop">
+<script type="text/javascript">
+  document.write(getImageTag());
+</script>
+        </div>
+    </div>
+
+ </body>
+</html>
+<!-- Script Made by FAXES -->
